@@ -11,7 +11,7 @@ export const uploadImage = async (req,res)=>{
     try {
         const file = await File.create(fileObj);
         res.status(200).json({
-            path: `http://localhost:8000/file/${file._id}`
+            path: `https://sharevault-fwv8.onrender.com/file/${file._id}`
         })
     } catch (error) {
         console.error(error.message);
